@@ -1,29 +1,40 @@
 /*webkit-sassui-icon-plus Start*/
+$webkit-sassui-icon-plus-options:(
+  hairline: 1px,
+  thin: 2px,
+  heavy: 6px,
+);
+
 .webkit-sassui-icon-plus{
+  $hairline: map-get($map: $webkit-sassui-icon-plus-options, $key: hairline);
+  $thin: map-get($map: $webkit-sassui-icon-plus-options, $key: thin);
+  $heavy: map-get($map: $webkit-sassui-icon-plus-options, $key: heavy);
+
   font-size: 10px;
-  width: 4em;
-  height:4em;
+  width: 2em;
+  height:2em;
   display: inline-block;
+  position: relative;
 
 
   &[data-type=hairline]{
     &:before,
     &:after{
-      border-width: 0.1em;
+      border-width: 1px;
     }
   }
 
   &[data-type=thin]{
     &:before,
     &:after{
-      border-width: 0.2em;
+      border-width: 2px;
     }
   }
 
   &[data-type=heavy]{
     &:before,
     &:after{
-      border-width: 0.4em;
+      border-width: 6px;
     }
   }
 
@@ -31,18 +42,19 @@
   &:after{
     content:'';
     display: block;
-    width: 4em;
     border-top-style: solid;
+    position: absolute;
+    left:0;
+    right:0;
+    top: 50%;
   }
 
   &:before{
-    position: relative;
-    top:50%;
     transform: translateY(-50%);
   }
 
   &:after{
-    transform: rotate(90deg) translateX(50%);
+    transform: translateY(-50%) rotate(90deg);
   }
 }
 /*webkit-sassui-icon-plus End*/
