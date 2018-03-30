@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-icon-plus",
+  "description": "Icon plus use html",
+  "main": [
+    "dist/webkit-sassui-icon-plus.css",
+    "dist/webkit-sassui-icon-plus.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "icon-plus"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-sassui-icon-plus",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

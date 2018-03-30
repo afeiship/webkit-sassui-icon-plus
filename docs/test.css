@@ -1,0 +1,41 @@
+/*webkit-sassui-icon-plus Start*/
+.webkit-sassui-icon-plus {
+  font-size: 10px;
+  width: 4em;
+  height: 4em;
+  display: inline-block;
+}
+
+.webkit-sassui-icon-plus[data-type=hairline]:before, .webkit-sassui-icon-plus[data-type=hairline]:after {
+  border-width: 0.1em;
+}
+
+.webkit-sassui-icon-plus[data-type=thin]:before, .webkit-sassui-icon-plus[data-type=thin]:after {
+  border-width: 0.2em;
+}
+
+.webkit-sassui-icon-plus[data-type=heavy]:before, .webkit-sassui-icon-plus[data-type=heavy]:after {
+  border-width: 0.4em;
+}
+
+.webkit-sassui-icon-plus:before, .webkit-sassui-icon-plus:after {
+  content: '';
+  display: block;
+  width: 4em;
+  border-top-style: solid;
+}
+
+.webkit-sassui-icon-plus:before {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.webkit-sassui-icon-plus:after {
+  transform: rotate(90deg) translateX(50%);
+}
+
+/*webkit-sassui-icon-plus End*/
+.test-webkit-sassui-icon-plus {
+  border: 1px solid red;
+}
